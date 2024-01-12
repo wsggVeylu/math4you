@@ -1,0 +1,1 @@
+import"./hoisted.24428bad.js";const s=await fetch("/api/pageviews").then(e=>e.json()),c=await fetch("/data/books.json").then(e=>e.json());for(let e=0;e<4;e++){const o=s[e],n=c[o.book],t=document.getElementById("spotLight"+(e+1)),a=t?.children[1];if(a.innerText=n.display_name,t instanceof HTMLAnchorElement&&(t.href="/book/"+o.book),t){const i=t.children[0];i.src=n.image}}
